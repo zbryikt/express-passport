@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    link(rel="stylesheet",type="text/css",href="/assets/bootstrap/3.0.2/css/bootstrap.min.css")
+  body
+    br
+    div(style="width:70%;margin:auto")
+      h2 Passport
+      form(action="/api/login", method="POST")
+        .form-group
+          label Username
+          input.form-control(type="text",name="username")
+        .form-group
+          label Password
+          input.form-control(type="password",name="password")
+        input.btn.btn-primary(type="submit",value="登入")
+        br
+        br
+        | ... 或者
+        a(href="/api/auth/facebook") 使用臉書登入
